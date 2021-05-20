@@ -26,6 +26,6 @@ public class AppTest
 
     @Test
     public void addTest2(){
-        assertEquals(1, App.addNums(1,1));
+        assertEquals(2, App.addNums(1,1));
     }
 }
