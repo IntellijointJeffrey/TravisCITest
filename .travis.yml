@@ -1,3 +1,11 @@
 language: java
 jdk: openjdk8
 install: true
+
+deploy:
+	provider: releases
+	api_key: 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
+	file: 'release.zip'
+	skip_cleanup: true
+	on:
+		tags: true
