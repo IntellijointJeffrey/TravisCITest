@@ -4,8 +4,8 @@ install: true
 
 deploy:
 	provider: releases
-	api_key: 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
-	file: 'release.zip'
+	api_key: ${github_TravisCITest_api_key}
+	file: "build/libs/Project.jar"
 	skip_cleanup: true
 	on:
 		tags: true
