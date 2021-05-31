@@ -23,9 +23,4 @@ public class AppTest
     public void addTest1(){
         assertEquals(2, App.addNums(1,1));
     }
-
-    @Test
-    public void addTest2(){
-        assertEquals(1, App.addNums(1,1));
-    }
 }
