@@ -5,12 +5,12 @@ jdk: openjdk8
 install: true
 
 deploy:
-	provider: releases
-	api_key: ${github_TravisCITest_api_key}
-	file_glob: true
-	file: "build/libs/*"
-	skip_cleanup: true
-	on:
-		all_branches: true
-		tags: true
-		jdk: openjdk8
+  - provider: releases
+    api_key: ${github_TravisCITest_api_key}
+    file_glob: true
+    file: "build/libs/*"
+    skip_cleanup: true
+    on:
+	    all_branches: true
+		  tags: true
+		  jdk: openjdk8
