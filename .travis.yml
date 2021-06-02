@@ -8,7 +8,7 @@ jdk:
 before_deploy:
   - git config --local user.name "Jeffrey Lee"
   - git config --local user.email "j.lee@intellijointsurgical.com"
-  - git tag "Test1"
+  - git tag "Test2"
 
 deploy:
   - provider: releases
@@ -16,7 +16,8 @@ deploy:
     file_glob: true
     file: "build/libs/*"
     skip_cleanup: true
-    name: "Test1"
+    name: "Test2"
     on:
         branch: main
+        tags: true
         jdk: openjdk8
