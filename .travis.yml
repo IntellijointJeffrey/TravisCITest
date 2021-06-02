@@ -6,12 +6,9 @@ jdk:
 - openjdk8
 
 before_deploy:
-  - ./gradlew clean
-  - ./gradlew jar
   - git config --local user.name "Jeffrey Lee"
   - git config --local user.email "j.lee@intellijointsurgical.com"
-  - export NAME="v$(./gradlew version -q)"
-  - git tag $NAME
+  - git tag "Test1"
 
 deploy:
   - provider: releases
@@ -19,7 +16,7 @@ deploy:
     file_glob: true
     file: "build/libs/*"
     skip_cleanup: true
-    name: $NAME
+    name: "Test1"
     on:
         branch: main
         jdk: openjdk8
