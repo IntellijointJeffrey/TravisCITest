@@ -18,6 +18,7 @@ deploy:
     skip_cleanup: true
     name: "Test2"
     on:
-        branch: main
-        tags: true
+        branch: 
+        - main
+        - Test2
         jdk: openjdk8
