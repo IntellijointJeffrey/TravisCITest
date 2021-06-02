@@ -18,7 +18,5 @@ deploy:
     skip_cleanup: true
     name: "Test6"
     on:
-        branch: 
-        - gh-pages
-        - /.*/
+        all_branches: true
         jdk: openjdk8
