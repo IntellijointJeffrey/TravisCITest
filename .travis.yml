@@ -8,15 +8,15 @@ jdk:
 before_deploy:
   - git config --local user.name "Jeffrey Lee"
   - git config --local user.email "j.lee@intellijointsurgical.com"
-  - git tag "Test6"
+  - git tag "Test7"
 
 deploy:
   - provider: releases
     api_key: ${github_TravisCITest_api_key}
     file_glob: true
-    file: "TravisCITest.jar"
+    file: "/libs/*"
     skip_cleanup: true
-    name: "Test7"
+    name: "Test8"
     on:
         all_branches: true
         jdk: openjdk8
